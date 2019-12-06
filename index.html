@@ -20,6 +20,7 @@
   left: 140px;
 }
 
+/* This is the CSS animation to make the lights blink */
 @keyframes blink {
   50% {
     background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
@@ -38,11 +39,15 @@
     background-size: 75px 150px;
   }
 }
+
+/* This triggers the animation, toggling it on and off */
 .laser {
   animation: blink .5s infinite;
   -webkit-animation: blink .5s infinite;
   -moz-animation: blink .5s infinite;
 }
+
+/* This is to give the robot white eyes by default */
 .brain {
   background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
   background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5;
@@ -55,6 +60,7 @@
   position: relative;
   left: 70px;
 }
+
 .torso {
   height: 0;
   width: 140px;
@@ -63,6 +69,8 @@
   border-right: 75px solid transparent;
   border-radius: 20px 20px 100px 100px;
 }
+
+/* Left arm */
 .left {
   font-family: 'Poller One', verdana, arial, sans-serif;
   font-weight: bold;
@@ -76,6 +84,8 @@
   left: -190px;
   z-index: -1;
 }
+
+/* Right arm */
 .right {
   font-family: 'Poller One', verdana, arial, sans-serif;
   font-weight: bold;
@@ -89,6 +99,8 @@
   left: 190px;
   z-index: -1;
 }
+
+/* Wheel */
 .foot {
   height: 40px;
   width: 40px;
@@ -101,6 +113,7 @@
   z-index: -1;
 }
 
+/* Positions GIF, starting from right of screen, for when animation is called */
 @keyframes dance {
   from {
     left: 800px;
@@ -122,6 +135,7 @@
   }
 }
 
+/* This is the GIF */
 img {
   animation: dance 8s infinite;
   -webkit-animation: dance 8s infinite;
@@ -169,12 +183,14 @@ $(".color").click(function() {
   var randomRGBA = 'rgba(' + red + ',' + green + ',' + blue + ', 1)';
 
   // and change the body's bg to random color
+  // TODO: Look into using a While True statement to have the button act like a strobe
   $("body").css("background", randomRGBA);
 
   //Display the three values in an alert window
   //alert(randomRGBA);
 });
 
+// Toggels the dancing GIF
 $(".moves").click(function() {
   $("img").toggle();
 });
