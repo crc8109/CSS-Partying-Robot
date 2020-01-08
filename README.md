@@ -4,9 +4,11 @@ This is an HTML file that uses JS/Jquery to create a robot using some animation 
 ## Getting Started
 
 Access the file at:
+
 https://dancing-robot.netlify.com/
 
 ## Acknowledgments
 
 Thank you to General Assembly for the resources. Here's a link to see their tutorials:
+
 https://dash.generalassemb.ly/
