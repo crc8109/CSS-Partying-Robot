@@ -1,5 +1,12 @@
 # CSS-Partying-Robot
-A sample of my CSS abilities. A robot made using HTML/CSS and animated as well. Also includes a button that generates a random color using RGBA and changes the background color accordingly. User can press rapidly to recreate disco lights.
+This is an HTML file that uses JS/Jquery to create a robot using some animation as well. Click the left button to turn on laser eyes. Click the middle button to randomly change the background color accordingly. Press it repeatedly to create a strobe effect. Click the right button to toggle the dancing GIF.
 
-Access a site running this file at:
+## Getting Started
+
+Access the file at:
 https://dancing-robot.netlify.com/
+
+## Acknowledgments
+
+Thank you to General Assembly for the resources. Here's a link to see their tutorials:
+https://dash.generalassemb.ly/
